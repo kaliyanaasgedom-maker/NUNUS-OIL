@@ -1,0 +1,9 @@
+// NUNU'S Hair Growth Oil Website
+
+function showMessage() {
+  alert("Thank you for choosing NUNU'S Natural Hair Growth Oil 🌿");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("NUNU'S website is ready!");
+});
