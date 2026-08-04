@@ -1,0 +1,104 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fffaf2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2f6b3c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 35px;
+  color: #f5d77a;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f3ead8;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #2f6b3c;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px;
+}
+
+.button {
+  display: inline-block;
+  background: #2f6b3c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #2f6b3c;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #ddd;
+}
+
+.product img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+footer {
+  background: #2f6b3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(max-width:700px){
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
