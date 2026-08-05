@@ -241,3 +241,14 @@ button:hover {
 .how-to-use h2 {
   color: #174d23;
 }
+.best-use {
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 25px;
+  background: #ffffff;
+  border-top: 5px solid #c89b3c;
+}
+
+.best-use h2 {
+  color: #174d23;
+}
