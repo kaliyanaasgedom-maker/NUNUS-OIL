@@ -145,3 +145,42 @@ footer {
 .ingredients h3 {
   color: #174d23;
 }
+/* NUNU'S Habesha Inspired Style */
+
+header {
+  border-bottom: 6px solid #c89b3c;
+}
+
+header h1 {
+  letter-spacing: 3px;
+}
+
+.hero {
+  background: linear-gradient(#f7f3e8, #eef5e9);
+}
+
+.hero h2 {
+  color: #174d23;
+}
+
+.ingredients h2::after {
+  content: " ✨";
+}
+
+.contact h2::before {
+  content: "🌿 ";
+}
+
+button {
+  background: #174d23;
+  border: 2px solid #c89b3c;
+}
+
+button:hover {
+  background: #c89b3c;
+  color: white;
+}
+
+.cards div {
+  border-top: 4px solid #c89b3c;
+}
