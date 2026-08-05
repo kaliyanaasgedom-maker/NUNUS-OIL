@@ -103,5 +103,9 @@ footer {
   }
 }
 function showOrder() {
-    document.getElementById("orderDetails").style.display = "block";
+    var order = document.getElementById("orderDetails");
+
+    if (order) {
+        order.style.display = "block";
+    }
 }
