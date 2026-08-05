@@ -359,3 +359,72 @@ footer p {
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     font-weight: 600;
 }
+/* NUNU'S Order Page Design */
+
+.order-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #174d23;
+    color: white;
+}
+
+.order-header h1 {
+    color: #c89b3c;
+}
+
+.order-hero,
+.product-info,
+.natural,
+.how-to-use,
+.order-info,
+.contact-order,
+.delivery,
+.social-links,
+.back-home {
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background: white;
+}
+
+.order-hero h2,
+.product-info h2,
+.natural h2,
+.how-to-use h2,
+.order-info h2,
+.contact-order h2,
+.delivery h2,
+.social-links h2 {
+    color: #174d23;
+}
+
+.contact-order a,
+.social-links a,
+.back-home a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #c89b3c;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.contact-order a:hover,
+.social-links a:hover,
+.back-home a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    background: #174d23;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+footer strong {
+    color: #c89b3c;
+}
