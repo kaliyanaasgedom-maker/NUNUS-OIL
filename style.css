@@ -450,3 +450,34 @@ h1, h2 {
     font-weight: bold;
     letter-spacing: 1px;
 }
+.order-start {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.order-button {
+    background: #c89b3c;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.order-button:hover {
+    opacity: 0.8;
+}
+
+#orderDetails section {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+}
