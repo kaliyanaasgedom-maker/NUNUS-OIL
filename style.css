@@ -481,3 +481,37 @@ h1, h2 {
     background: white;
     border-radius: 20px;
 }
+.order-form {
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.order-form h2 {
+    color: #174d23;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 85%;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #c89b3c;
+    font-size: 16px;
+}
+
+.order-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.order-form label {
+    color: #174d23;
+    font-weight: bold;
+}
+
+.order-form .order-button {
+    margin-top: 15px;
+}
