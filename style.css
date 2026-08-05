@@ -319,3 +319,14 @@ section p {
   border-radius: 30px;
   cursor: pointer;
 }
+footer {
+  background: #174d23;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 8px 0;
+}
