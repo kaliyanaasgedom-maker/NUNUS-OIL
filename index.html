@@ -1,170 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head <img src="EXACT-FILE-NAME-HERE" alt="NUNU’S Hair Oil">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NUNU'S Hair Growth Oil</title>
+<title>Order NUNU'S Hair Oil</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<section class="contact">
-  <h2>Contact NUNU'S 🌿</h2>
-  <a href="order.html">
-  <button>Order Now 🌿</button>
-</a>
 
-  <div class="social-links">
-    <a href="https://wa.me/251911626334">💬 WhatsApp: 0911626334</a>
-    <a href="https://t.me/nunusoil">✈️ Telegram: @nunusoil</a>
-    <a href="https://www.instagram.com/nunus_oil">📸 Instagram: @nunus_oil</a>
-    <a href="https://www.tiktok.com/@nunus.oil">🎵 TikTok: @nunus.oil</a>
-  </div>
-</section>
-  <section class="ingredients">
-  <h<section class="ingredients">
-  <h2>NUNU’S Natural Hair Oil 🌿</h2>
-
-  <div class="cards">
-
-    <div>
-      <h3>🌿 Rosemary</h3>
-      <p>Natural herbal ingredient used in traditional hair care.</p>
-    </div>
-
-    <div>
-      <h3>🌸 Clove</h3>
-      <p>A traditional ingredient used in natural beauty routines.</p>
-    </div>
-
-    <div>
-      <h3>🧄 Garlic</h3>
-      <p>Part of a natural herbal hair care blend.</p>
-    </div>
-
-    <div>
-      <h3>🫚 Ginger</h3>
-      <p>A natural ingredient included in the NUNU’S blend.</p>
-    </div>
-
-    <div>
-      <h3>🌱 Fenugreek</h3>
-      <p>Traditionally used in natural hair care recipes.</p>
-    </div>
-
-  </div>
-
-  <h3>✨ Homemade & Natural</h3>
-  <p>🌱 No added chemicals</p>
-
-    <section class="hero">
-  <div class="text">
-    <h2>NUNU’S Natural Hair Oil 🌿</h2>
-
-    <p>
-      Rosemary • Clove • Garlic • Ginger • Fenugreek
-    </p>
-
-    <p>
-      ✨ Homemade & Natural<br>
-      🌱 No added chemicals
-    </p>
-
-    <a href="order.html">
-      <button>Order Now 🌿</button>
-    </a>
-
-  </div>
-</section>
-  
-  
-</section>
 <body>
 
-<header>
-<div class="logo">
-<h1>NUNU'S</h1>
-<p>Natural Hair Growth Oil</p>
-</div>
+<section class="order-page">
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#benefits">Benefits</a>
-<a href="#ingredients">Ingredients</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section id="home" class="hero">
-
-<h2>Healthy Hair Starts Naturally</h2>
+<h1>NUNU’S Natural Hair Oil 🌿</h1>
 
 <p>
-Grow stronger, healthier, and shinier hair with NUNU'S Hair Growth Oil.
-Made with carefully selected natural ingredients to nourish your scalp
-and support healthy hair growth.
+Rosemary • Clove • Garlic • Ginger • Fenugreek
 </p>
 
-<a href="#contact" class="btn">Order Now</a>
-
-</section>
-
-<section id="about">
-
-<h2>About NUNU'S</h2>
+<h2>✨ Homemade & Natural</h2>
 
 <p>
-NUNU'S Hair Growth Oil is a natural hair care product designed to
-help reduce hair fall, strengthen hair roots, moisturize the scalp,
-and promote healthy hair growth.
+🌱 No added chemicals
 </p>
 
+
+<h2>Price 💰</h2>
+
+<p>
+One bottle: <strong>550 ETB</strong>
+</p>
+
+
+<h2>Payment Before Delivery 💳</h2>
+
+<p>
+CBE: <strong>1000580014128</strong>
+<br>
+Telebirr: <strong>0911626334</strong>
+</p>
+
+
+<h2>Delivery 🚚</h2>
+
+<p>
+🌿 Piazza & Megenagna: Free delivery
+<br>
+🌿 Other areas: Delivery fee applies
+</p>
+
+
+<h2>Place Your Order 🌿</h2>
+
+<input id="name" placeholder="Your Name">
+<br><br>
+
+<input id="phone" placeholder="Your Phone Number">
+<br><br>
+
+<input id="address" placeholder="Delivery Address">
+<br><br>
+
+<input id="quantity" type="number" value="1" min="1">
+
+<br><br>
+
+<button onclick="sendOrder()">Order on WhatsApp 🌿</button>
+
+
+<h2>Follow NUNU’S 📱</h2>
+
+<p>
+Instagram: @nunus_oil
+<br>
+TikTok: @nunus.oil
+<br>
+Telegram: @nunusoil
+<br>
+WhatsApp: 0911626334
+</p>
+
+
 </section>
 
-<section id="benefits">
 
-<h2>Why Choose NUNU'S?</h2>
+<script>
 
-<ul>
+function sendOrder(){
 
-<li>🌿 100% Natural Ingredients</li>
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let address = document.getElementById("address").value;
+let quantity = document.getElementById("quantity").value;
 
-<li>💚 Helps Reduce Hair Fall</li>
+let total = quantity * 550;
 
-<li>✨ Promotes Hair Growth</li>
+let message =
+"NUNU'S Hair Oil Order 🌿%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Address: " + address + "%0A" +
+"Quantity: " + quantity + "%0A" +
+"Total: " + total + " ETB";
 
-<li>🌱 Moisturizes Dry Scalp</li>
+window.open("https://wa.me/251911626334?text=" + message);
 
-<li>🌸 Adds Shine & Softness</li>
+}
 
-<li>🇪🇹 Made with Love</li>
-
-</ul>
-
-
-
-
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<p
-
-
-
-<p>Email: info@nunus.com</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 NUNU'S Hair Growth Oil. All Rights Reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
+</script>
 
 </body>
 
