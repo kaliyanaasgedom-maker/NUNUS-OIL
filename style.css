@@ -300,3 +300,22 @@ section p {
     transform: translateY(0);
   }
 }
+.order-box {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 25px;
+  background: white;
+  border-top: 5px solid #c89b3c;
+}
+
+.order-box h1,
+.order-box h2 {
+  color: #174d23;
+}
+
+.order-box button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
