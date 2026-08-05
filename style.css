@@ -184,3 +184,38 @@ button:hover {
 .cards div {
   border-top: 4px solid #c89b3c;
 }
+/* NUNU'S Habesha Luxury Details */
+
+.hero::before,
+.order-page::before {
+  content: "✦ ✦ ✦";
+  display: block;
+  color: #c89b3c;
+  font-size: 22px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.ingredients h2::after,
+.about h2::after,
+.natural h2::after,
+.contact h2::after {
+  content: " ✨";
+}
+
+.order-page {
+  border: 2px solid #c89b3c;
+}
+
+.hero h1 {
+  text-shadow: 1px 1px 2px #c89b3c;
+}
+
+.cards div:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
+
+.order-page input:focus {
+  outline: 2px solid #174d23;
+}
