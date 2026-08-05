@@ -428,3 +428,25 @@ footer {
 footer strong {
     color: #c89b3c;
 }
+/* NUNU'S Habesha Inspired Touch */
+
+section {
+    border-top: 2px solid #c89b3c;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
+.order-header::after {
+    content: "✦ ✦ ✦";
+    display: block;
+    margin-top: 15px;
+    color: #c89b3c;
+    letter-spacing: 8px;
+}
+
+.order-button {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
