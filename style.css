@@ -330,3 +330,17 @@ footer {
 footer p {
   margin: 8px 0;
 }
+.reviews {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.review {
+  background: white;
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  border-left: 5px solid #c89b3c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
