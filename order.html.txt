@@ -1,0 +1,64 @@
+order.html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order NUNU'S Hair Oil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="contact">
+  <h1>Order NUNU'S Hair Oil 🌿</h1>
+
+  <p>Price: 550 ETB per bottle</p>
+
+  <p>
+    💳 Payment:<br>
+    CBE: 1000580014128<br>
+    Telebirr: 0911626334
+  </p>
+
+  <p>
+    🚚 Delivery:<br>
+    Piazza & Megenagna: Free delivery<br>
+    Other areas: Delivery fee applies
+  </p>
+
+  <h3>Your Information</h3>
+
+  <input id="name" placeholder="Your Name"><br><br>
+  <input id="phone" placeholder="Your Phone Number"><br><br>
+  <input id="address" placeholder="Delivery Address"><br><br>
+  <input id="quantity" type="number" value="1" placeholder="Quantity">
+
+  <br><br>
+
+  <button onclick="sendOrder()">Place Order on WhatsApp</button>
+
+</section>
+
+
+<script>
+function sendOrder(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let address = document.getElementById("address").value;
+let quantity = document.getElementById("quantity").value;
+
+let message = 
+"NUNU'S Hair Oil Order 🌿%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Address: " + address + "%0A" +
+"Quantity: " + quantity + "%0A" +
+"Total: " + (quantity * 550) + " ETB";
+
+window.open("https://wa.me/251911626334?text=" + message);
+}
+</script>
+
+</body>
+</html>
