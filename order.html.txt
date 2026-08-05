@@ -1,8 +1,9 @@
-order.html
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order NUNU'S Hair Oil</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,37 +11,47 @@ order.html
 <body>
 
 <section class="contact">
-  <h1>Order NUNU'S Hair Oil 🌿</h1>
 
-  <p>Price: 550 ETB per bottle</p>
+<h1>Order NUNU'S Hair Oil 🌿</h1>
 
-  <p>
-    💳 Payment:<br>
-    CBE: 1000580014128<br>
-    Telebirr: 0911626334
-  </p>
+<h2>Price: 550 ETB</h2>
 
-  <p>
-    🚚 Delivery:<br>
-    Piazza & Megenagna: Free delivery<br>
-    Other areas: Delivery fee applies
-  </p>
+<p>
+💳 Payment Before Delivery<br><br>
 
-  <h3>Your Information</h3>
+CBE: 1000580014128<br>
+Telebirr: 0911626334
+</p>
 
-  <input id="name" placeholder="Your Name"><br><br>
-  <input id="phone" placeholder="Your Phone Number"><br><br>
-  <input id="address" placeholder="Delivery Address"><br><br>
-  <input id="quantity" type="number" value="1" placeholder="Quantity">
+<p>
+🚚 Delivery:<br>
+Piazza & Megenagna: Free delivery<br>
+Other areas: Delivery fee applies
+</p>
 
-  <br><br>
 
-  <button onclick="sendOrder()">Place Order on WhatsApp</button>
+<h3>Your Information</h3>
+
+<input id="name" type="text" placeholder="Your Name">
+<br><br>
+
+<input id="phone" type="text" placeholder="Your Phone Number">
+<br><br>
+
+<input id="address" type="text" placeholder="Delivery Address">
+<br><br>
+
+<input id="quantity" type="number" value="1" min="1">
+<br><br>
+
+<button onclick="sendOrder()">Place Order 🌿</button>
+
 
 </section>
 
 
 <script>
+
 function sendOrder(){
 
 let name = document.getElementById("name").value;
@@ -48,17 +59,22 @@ let phone = document.getElementById("phone").value;
 let address = document.getElementById("address").value;
 let quantity = document.getElementById("quantity").value;
 
-let message = 
+let total = quantity * 550;
+
+let message =
 "NUNU'S Hair Oil Order 🌿%0A%0A" +
 "Name: " + name + "%0A" +
 "Phone: " + phone + "%0A" +
 "Address: " + address + "%0A" +
 "Quantity: " + quantity + "%0A" +
-"Total: " + (quantity * 550) + " ETB";
+"Total: " + total + " ETB";
 
 window.open("https://wa.me/251911626334?text=" + message);
+
 }
+
 </script>
 
 </body>
+
 </html>
