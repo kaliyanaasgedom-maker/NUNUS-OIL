@@ -252,3 +252,51 @@ button:hover {
 .best-use h2 {
   color: #174d23;
 }
+/* NUNU'S Final Clean Design */
+
+section {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 35px;
+}
+
+section p {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact a {
+  font-weight: bold;
+}
+
+.order-page button {
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
