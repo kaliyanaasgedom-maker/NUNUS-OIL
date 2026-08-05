@@ -344,3 +344,18 @@ footer p {
   border-left: 5px solid #c89b3c;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
+.results {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.result-card {
+    background: #fff;
+    margin: 15px auto;
+    max-width: 700px;
+    padding: 18px;
+    border-radius: 18px;
+    border-left: 5px solid #c89b3c;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    font-weight: 600;
+}
