@@ -102,3 +102,6 @@ footer {
     width: 90%;
   }
 }
+function showOrder() {
+    document.getElementById("orderDetails").style.display = "block";
+}
