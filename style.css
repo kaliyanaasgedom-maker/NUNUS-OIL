@@ -117,3 +117,31 @@ footer {
   text-decoration: none;
   font-weight: bold;
 }
+.ingredients {
+  text-align: center;
+  padding: 50px 10%;
+  background: #f7f3e8;
+}
+
+.ingredients h2 {
+  color: #174d23;
+  font-size: 35px;
+}
+
+.ingredients .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ingredients .cards div {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.ingredients h3 {
+  color: #174d23;
+}
