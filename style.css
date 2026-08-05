@@ -219,3 +219,14 @@ button:hover {
 .order-page input:focus {
   outline: 2px solid #174d23;
 }
+.benefits {
+  padding: 50px 20px;
+  margin: 20px;
+  border-radius: 25px;
+  background: #ffffff;
+  border-top: 5px solid #c89b3c;
+}
+
+.benefits h2 {
+  color: #174d23;
+}
