@@ -1,287 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUNU'S Hair Oil - Order</title>
 
-    <title>Order | NUNU'S Natural Hair Oil</title>
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="order-header">
+<header class="hero">
 
-    <h1>🌿 NUNU'S Natural Hair Oil</h1>
+<h1>NUNU'S</h1>
 
-    <p>Homemade • Natural • No Added Chemicals</p>
+<h2>Natural Hair Oil 🌿</h2>
+
+<p>
+Premium Homemade Hair Oil Inspired by Habesha Hair Care Traditions
+</p>
 
 </header>
 
+<section class="product-card">
 
-<section class="order-hero">
+<h2>🌿 Why Choose NUNU'S?</h2>
 
-    <h2>Order Your Natural Hair Oil Today ✨</h2>
-
-    <p>
-        Thank you for choosing NUNU'S Natural Hair Oil.
-        Our oil is handmade with carefully selected natural ingredients
-        inspired by traditional hair care.
-    </p>
-
-</section>
-
-
-<section class="product-info">
-
-    <h2>🌱 Natural Ingredients</h2>
-
-    <p>
-        Rosemary • Clove • Garlic • Ginger • Fenugreek
-    </p>
+<p>
+✔ Homemade & Natural<br>
+✔ Rosemary • Clove • Garlic • Ginger • Fenugreek<br>
+✔ No Added Chemicals<br>
+✔ Suitable for all hair types
+</p>
 
 </section>
 
-
-<section class="natural">
-
-    <h2>💚 Homemade & Natural</h2>
-
-    <p>
-        NUNU'S Natural Hair Oil is made with care using natural ingredients.
-        No added chemicals.
-    </p>
-
-</section>
-
-
-<section class="how-to-use">
-
-    <h2>📝 How To Use</h2>
-
-    <p>
-        Apply the oil to your scalp and hair.
-        Massage gently for a few minutes.
-        Leave it on for several hours or overnight if you prefer.
-        <br><br>
-        If the oil becomes thick in cool weather, place the closed bottle
-        in warm water for a few minutes to reactivate the ingredients.
-    </p>
-
-</section>
-    <section class="order-start">
+<section class="how-order">
 
 <h2>🛒 Ready to Order?</h2>
 
-<p>Click below to see price, payment and delivery information.</p>
+<p>
+Click the button below to continue with your order.
+</p>
+
 <button id="continueOrder" class="order-button">
 Continue to Order 🛒
 </button>
-<button onclick="alert('working')" class="order-button">
-Continue to Order 🛒
-</button>
-</button>
 
 </section>
+
 <div id="orderDetails" style="display:none;">
 
 <section class="order-form">
 
-<h2>🛒 Complete Your Order</h2>
-<h3>💰 Price</h3>
+<h2>Complete Your Order</h2>
 
-<p>
-NUNU'S Natural Hair Oil: <strong>550 ETB per bottle</strong>
+<p><strong>Price: 550 ETB per bottle</strong></p>
+
+<label>Your Name</label><br>
+<input type="text" id="customerName">
+
+<br><br>
+
+<label>Phone Number</label><br>
+<input type="text" id="phoneNumber">
+
+<br><br>
+
+<label>Delivery Address</label><br>
+<textarea id="address"></textarea>
+
+<br><br>
+
+<label>Number of Bottles</label><br>
+
+<input type="number" id="quantity" min="1" value="1">
+
+<br><br>
+
+<p id="totalPrice">
+Total Price: 550 ETB
 </p>
-<p>Please fill your information below:</p>
-
-<label>Your Name</label>
-<br>
-<input type="text" id="customerName" placeholder="Enter your name">
-
-<br><br>
-
-<label>Phone Number</label>
-<br>
-<input type="text" id="phoneNumber" placeholder="Enter your phone number">
-
-<br><br>
-
-<label>Delivery Address</label>
-<br>
-<textarea id="address" placeholder="Enter your delivery address"></textarea>
-
-<br><br>
-
-<label>Number of Bottles</label>
-<br>
-<input type="number" id="quantity" placeholder="Example: 1">
-
-<br><br>
-
 <button onclick="sendOrder()" class="order-button">
-Send Order WhatsApp 💬
+💬 Order on WhatsApp
 </button>
 
 </section>
 
 </div>
 
+<section class="social-links">
 
-<section class="order-start">
+<h2>Follow NUNU'S</h2>
 
-<button onclick="showOrder()" class="order-button">
-Continue to Order 🛒
-</button>
+<a href="https://instagram.com/nunus_oil" target="_blank">
+📸 Instagram
+</a>
 
-</section>
+<br><br>
 
-
-<div id="orderDetails" style="display:none;">
-
-</section>
-<section class="order-start">
-
-<h2>🛒 Ready to Order?</h2>
-
-<p>Click below to see price, payment and delivery information.</p>
-
-<button onclick="showOrder()" class="order-button">
-Continue to Order 🛒
-</button>
-
-</section>
-
-
-<div id="orderDetails" style="display:none;">
-
-<h2>💰 Price</h2>
-<p>Your product price here</p>
-
-<h2>🏦 Payment Information</h2>
-<p>
-Bank Name: Your Bank<br>
-Account Name: NUNU'S<br>
-Account Number: Your Account
-</p>
-
-<h2>📦 Delivery</h2>
-<p>
-Delivery information here.
-</p>
-
-<h2>📞 Place Your Order</h2>
-
-<a href="https://wa.me/251911626334" target="_blank">
-💬 Order on WhatsApp
+<a href="https://tiktok.com/@nunus.oil" target="_blank">
+🎵 TikTok
 </a>
 
 <br><br>
 
 <a href="https://t.me/nunuoil" target="_blank">
-💬 Order on Telegram
+📩 Telegram
 </a>
 
-</div>
-
 </section>
-
-</div>
-<section class="order-info">
-
-    <h2>🛒 How To Order</h2>
-
-    <p>
-        1. Contact NUNU'S through WhatsApp or Telegram.<br>
-        2. Tell us the number of bottles you want.<br>
-        3. Send your name and delivery location.<br>
-        4. Confirm your order and receive your natural hair oil.
-    </p>
-
-</section>
-
-
-<section class="contact-order">
-
-    <h2>📞 Place Your Order</h2>
-
-    <a href="https://wa.me/251911626334" target="_blank">
-        💬 Order on WhatsApp
-    </a>
-
-    <br><br>
-
-    <a href="https://t.me/nunuoil" target="_blank">
-        💬 Order on Telegram
-    </a>
-
-</section>
-
-
-<section class="delivery">
-    <button onclick="showOrder()" class="order-button">
-Continue to Order 🛒
-</button>
-
-
-<div id="orderDetails" style="display:none !important;">
-<h2>💰 Price</h2>
-<p>Your product price here</p>
-
-<h2>🏦 Payment Information</h2>
-<p>
-Bank Name: Your Bank<br>
-Account Name: NUNU'S<br>
-Account Number: Your Account
-</p>
-
-<h2>📦 Delivery</h2>
-<p>
-Delivery information here.
-</p>
-
-</div>
-</section>
-
-
-<section class="social-links">
-
-    <h2>Follow NUNU'S 🌿</h2>
-
-    <p>Stay connected for updates, hair care tips and new products.</p>
-
-    <a href="https://instagram.com/nunus_oil" target="_blank">
-        📸 Instagram @nunus_oil
-    </a>
-
-    <br><br>
-
-    <a href="https://www.tiktok.com/@nunus.oil" target="_blank">
-        🎵 TikTok @nunus.oil
-    </a>
-
-    <br><br>
-
-    <a href="https://t.me/nunuoil" target="_blank">
-        💬 Telegram @nunuoil
-
-
 
 <footer>
 
-    <p><strong>🌿 NUNU'S Natural Hair Oil</strong></p>
-
-    <p>Homemade • Natural • Made with care in Ethiopia 🇪🇹</p>
-
-    <p>© 2026 NUNU'S. All Rights Reserved.</p>
+<p>© 2026 NUNU'S Natural Hair Oil</p>
 
 </footer>
-
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
