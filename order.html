@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>NUNU'S Hair Oil - Order</title>
 
 <link rel="stylesheet" href="style.css">
@@ -22,6 +24,7 @@ Premium Homemade Hair Oil Inspired by Habesha Hair Care Traditions
 
 </header>
 
+
 <section class="product-card">
 
 <h2>🌿 Why Choose NUNU'S?</h2>
@@ -35,6 +38,7 @@ Premium Homemade Hair Oil Inspired by Habesha Hair Care Traditions
 
 </section>
 
+
 <section class="how-order">
 
 <h2>🛒 Ready to Order?</h2>
@@ -42,13 +46,16 @@ Premium Homemade Hair Oil Inspired by Habesha Hair Care Traditions
 <p>
 Click the button below to continue with your order.
 </p>
-<div class="payment-section">
-  
-<button onclick="sendOrder()" class="order-button">
+
+<button id="continueOrder" class="order-button">
+Continue to Order 🛒
+</button>
 
 </section>
 
+
 <div id="orderDetails" style="display:none;">
+
 
 <section class="order-form">
 
@@ -56,34 +63,43 @@ Click the button below to continue with your order.
 
 <p><strong>Price: 550 ETB per bottle</strong></p>
 
+
 <label>Your Name</label><br>
 <input type="text" id="customerName">
 
 <br><br>
+
 
 <label>Phone Number</label><br>
 <input type="text" id="phoneNumber">
 
 <br><br>
 
+
 <label>Delivery Address</label><br>
 <textarea id="address"></textarea>
 
 <br><br>
 
+
 <label>Number of Bottles</label><br>
 
 <input type="number" id="quantity" min="1" value="1">
 
+
 <br><br>
+
 
 <p id="totalPrice">
 Total Price: 550 ETB
 </p>
-<button onclick="sendOrder()" class="order-button">
-  <div class="payment-section">
+
+
+
+<div class="payment-section">
 
 <h2>💳 Payment Method</h2>
+
 
 <label>
 <input type="radio" name="payment" value="Telebirr">
@@ -95,6 +111,8 @@ Telebirr
 📱 0911626334 — Kalkidan Solomon
 </p>
 
+
+
 <label>
 <input type="radio" name="payment" value="CBE Birr">
 CBE Birr / Bank Transfer
@@ -104,12 +122,17 @@ CBE Birr / Bank Transfer
 🏦 Account Number: 1000580014128
 </p>
 
+
+
 <label>
 <input type="radio" name="payment" value="Cash on Delivery">
 Cash on Delivery
 </label>
 
+
 </div>
+
+
 
 
 <div class="delivery-note">
@@ -121,31 +144,54 @@ Cash on Delivery
 Megenagna • Gurd Shola • Piassa • Yohannes Giyorgis
 </p>
 
+
 <p>
-📌 Key Note: Delivery fees may change depending on your location.
+📌 Key Note:
+Delivery fee may change depending on your location.
 Please confirm your address before completing your order.
 </p>
 
+
 </div>
-  <div class="screenshot-upload">
+
+
+
+
+<div class="screenshot-upload">
 
 <h2>📸 Upload Payment Screenshot</h2>
 
-<p>Please upload your payment confirmation screenshot.</p>
+<p>
+Please upload your payment confirmation screenshot.
+</p>
 
 <input type="file" id="paymentScreenshot" accept="image/*">
 
+
 </div>
+
+
+
+<br>
+
+
+<button onclick="sendOrder()" class="order-button">
 💬 Order on WhatsApp
 </button>
 
+
 </section>
 
+
 </div>
+
+
+
 
 <section class="social-links">
 
 <h2>Follow NUNU'S</h2>
+
 
 <a href="https://instagram.com/nunus_oil" target="_blank">
 📸 Instagram
@@ -153,17 +199,23 @@ Please confirm your address before completing your order.
 
 <br><br>
 
+
 <a href="https://tiktok.com/@nunus.oil" target="_blank">
 🎵 TikTok
 </a>
 
 <br><br>
 
+
 <a href="https://t.me/nunuoil" target="_blank">
 📩 Telegram
 </a>
 
+
 </section>
+
+
+
 
 <footer>
 
@@ -171,7 +223,11 @@ Please confirm your address before completing your order.
 
 </footer>
 
+
+
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
