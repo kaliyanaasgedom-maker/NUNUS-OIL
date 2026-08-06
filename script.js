@@ -14,26 +14,35 @@ document.getElementById("quantity").addEventListener("input", function () {
 });
 
 // Send order to WhatsApp
-function sendOrder() {
+function sendOrder(){
 
-    let name = document.getElementById("customerName").value;
-    let phone = document.getElementById("phoneNumber").value;
-    let address = document.getElementById("address").value;
-    let qty = parseInt(document.getElementById("quantity").value) || 1;
-    let total = qty * 550;
+let name = document.getElementById("customerName").value;
+let phone = document.getElementById("phoneNumber").value;
+let address = document.getElementById("address").value;
+let quantity = document.getElementById("quantity").value;
 
-    let message =
-`🌿 NUNU'S Hair Oil Order
+let payment = document.querySelector('input[name="payment"]:checked');
 
-👤 Name: ${name}
-📞 Phone: ${phone}
-📍 Address: ${address}
-🧴 Quantity: ${qty}
-💰 Price per Bottle: 550 ETB
-💵 Total Price: ${total} ETB`;
+if(payment){
+    payment = payment.value;
+} else {
+    payment = "Not selected";
+}
 
-    window.open(
-        "https://wa.me/251911626334?text=" + encodeURIComponent(message),
-        "_blank"
-    );
+let total = quantity * 550;
+
+let message =
+"NUNU'S Hair Oil Order 🌿%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Address: " + address + "%0A" +
+"Quantity: " + quantity + "%0A" +
+"Total: " + total + " ETB%0A" +
+"Payment Method: " + payment;
+
+
+window.open(
+"https://wa.me/251911626334?text=" + message
+);
+
 }
