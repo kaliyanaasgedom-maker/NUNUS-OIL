@@ -1,32 +1,39 @@
-window.onload = function() {
+// Show the order form
+document.getElementById("continueOrder").addEventListener("click", function () {
+    document.getElementById("orderDetails").style.display = "block";
+    this.style.display = "none";
+});
 
-    const button = document.getElementById("continueOrder");
-    const details = document.getElementById("orderDetails");
+// Update total price automatically
+document.getElementById("quantity").addEventListener("input", function () {
+    let qty = parseInt(this.value) || 1;
+    let total = qty * 550;
 
-    if (button && details) {
-        button.onclick = function() {
-            details.style.display = "block";
-        };
-    function sendOrder() {
+    document.getElementById("totalPrice").innerHTML =
+        "<strong>Total Price: " + total + " ETB</strong>";
+});
 
-let name = document.getElementById("customerName").value;
-let phone = document.getElementById("phoneNumber").value;
-let address = document.getElementById("address").value;
-let quantity = document.getElementById("quantity").value;
+// Send order to WhatsApp
+function sendOrder() {
 
-let total = quantity * 550;
+    let name = document.getElementById("customerName").value;
+    let phone = document.getElementById("phoneNumber").value;
+    let address = document.getElementById("address").value;
+    let qty = parseInt(document.getElementById("quantity").value) || 1;
+    let total = qty * 550;
 
-let message =
-"NUNU'S Hair Oil Order%0A%0A" +
-"Name: " + name + "%0A" +
-"Phone: " + phone + "%0A" +
-"Address: " + address + "%0A" +
-"Quantity: " + quantity + "%0A" +
-"Total Price: " + total + " ETB";
+    let message =
+`🌿 NUNU'S Hair Oil Order
 
-window.open(
-"https://wa.me/251911626334?text=" + message,
-"_blank"
-);
+👤 Name: ${name}
+📞 Phone: ${phone}
+📍 Address: ${address}
+🧴 Quantity: ${qty}
+💰 Price per Bottle: 550 ETB
+💵 Total Price: ${total} ETB`;
 
+    window.open(
+        "https://wa.me/251911626334?text=" + encodeURIComponent(message),
+        "_blank"
+    );
 }
